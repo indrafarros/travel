@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\Api\BusController;
 use App\Http\Controllers\Api\DriverController;
+use App\Http\Controllers\Api\JadwalController;
+use App\Http\Controllers\Api\RuteController;
+use App\Http\Controllers\Api\TerminalController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -23,3 +26,6 @@ use Illuminate\Support\Facades\Route;
 // Route::delete('buses/{bus}', [BusController::class, 'destroy']);
 Route::apiResource('buses', BusController::class);
 Route::apiResource('drivers', DriverController::class);
+Route::apiResource('terminals', TerminalController::class);
+Route::apiResource('rutes', RuteController::class);
+Route::apiResource('jadwals', JadwalController::class);
